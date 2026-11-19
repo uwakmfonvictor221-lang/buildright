@@ -11,12 +11,10 @@
 body{
     background-color: #f9f9f9;
 }
-nav{
+nav,.geko{
     display: none;
 }
-.geko{
-    display: flex;
-}
+
 
 
 header{
@@ -39,10 +37,11 @@ header{
     background-color: transparent;
     border: none;
 }
+
 @media (min-width: 1024px){
 .clas{display: none;}
 
-nav{
+nav,.geko{
     display: flex;
 }
 ul{
