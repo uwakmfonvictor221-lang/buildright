@@ -36,10 +36,11 @@ header{
     font-size: 1.7rem;
     background-color: transparent;
     border: none;
+    display: flex;
 }
 
 @media (min-width: 1024px){
-.clas{display: none;}
+.clas{display: flex;}
 
 nav,.geko{
     display: flex;
@@ -48,6 +49,7 @@ ul{
 display: flex;
 list-style: none;
 gap: 30px;
+transition-duration: 500ms;
 }
 
 li:first-child a{
@@ -73,5 +75,27 @@ header{
     padding-right: 20px;
     border: none;
     text-transform: uppercase;
+    transition-duration: 500ms;
 }
+}
+.geko:hover{
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+li:first-child:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+    background-color: var(--color-nursery);
+}
+li:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+    background-color: var(--color-primary);
+}
+@keyframes move{
+from{transform: translateX(20px);}
+to{transform: translateX(50%);}
+}
+.tea {
+  animation: floatUp 5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
