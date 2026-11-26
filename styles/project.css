@@ -1,0 +1,25 @@
+@media(min-width:1024px){
+    .div{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+.div img{
+    height: 350px;
+}
+div{
+    gap: 20px;
+}
+.line{
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.line hr{
+    width: 80%;
+    height: 0;
+    margin-left: -0px;
+}
+.line h3{
+    padding-left: 20px;
+}
