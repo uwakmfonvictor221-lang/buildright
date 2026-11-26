@@ -1,7 +1,8 @@
-@media(min-width:1024px){
+@media(min-width:768px){
     .div{
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
+        padding-left: 20px;
     }
 }
 .div img{
@@ -22,4 +23,37 @@ div{
 }
 .line h3{
     padding-left: 20px;
+}
+.div> article::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: black;
+    margin-bottom: 20px;
+    opacity: 0.5;
+    position: absolute;
+}
+.div> article{
+    position: relative;
+}
+article div{
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+@media(min-width:1024px){
+.div >article >div,.div> article::before{
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+.div >article:hover div{
+    opacity: 1;
+}
+
+.div> article:hover::before{
+    opacity: 0.5;
+}
 }
